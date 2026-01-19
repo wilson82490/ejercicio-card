@@ -1,53 +1,74 @@
-body{
- display: flex;
-  justify-content: center;
-  align-items: center;  
-  background-color: darksalmon;
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+img {
+  width: 100%;
+  height: auto;
 }
 
+h2 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 0.25em;
+}
+
+body {
+  max-width: 80%;
+  margin: auto;
+}
 
 .card {
-  width: 600px;
-  height: 400px;
-  background-color: #fff;
-  border: 1px solid black;
-  padding: 20px;
-  background-color: aquamarine;
+  width: 320px;
+  margin: 2rem auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-
-.card img {
-  width: 100%;
-  display: block;
+.card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
-div{
-    margin-top: 10%;
+.card-content {
+  padding: 0.5rem 1em;
 }
 
-
-.card h2 {
-  margin: 0 0 10px;
-  font-size: 18px;
-  font-size: larger;
-  text-align: center;
-}
-
-.card p {
-  margin: 0 0 15px;
-  font-size: 14px;
-  color: #555;
-  font-size: larger;
-  text-align: center;
-}
-
-
-.card a {
-  padding: 8px 12px;
-  background: #007bff;
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin-top: 0.5em;
+  background-color: #007bff;
   color: #fff;
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+.navbar ul{
+    text-align: center;
+}
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
   
+
+}
+
+.navbar a {
+  color: red;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+ 
 }
